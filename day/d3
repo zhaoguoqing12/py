@@ -1,0 +1,21 @@
+import time
+import random
+a=input("请输入第一个人生日:")
+b=input("请输入第二个人生日:")
+time.mktime(time.strptime(a,""))
+if(a>b):
+    print("第二个人大")
+else:
+    print("第一个人大")
+# ---------------------
+list1=[]
+for i in range(10):
+    a=int(random.randrange(1,100))
+    list1.append(a)
+print(list1)
+b=int(random.randrange(1,100))
+print(b)
+if not b in list1:
+     print("不在")
+elif b in list1:
+     print("在")

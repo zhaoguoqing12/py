@@ -1,0 +1,40 @@
+import math
+# a=[1,2,3,4,5]
+# print(tuple(a))
+# a=[1,1,2,2,3]
+# print(set(a))
+# print(chr(97))
+# print(ord('a'))
+# print(abs(-5))
+# print(abs(-10))
+# print(math.ceil(3.54))
+# print(math.floor(3.5))
+# try:
+#     print("a")
+#     # raise
+#     print("b")
+#     print("c")
+# except:
+#     print("哈哈哈")
+# else:
+#     print("嘻嘻嘻")
+# finally:
+#     print("xxx")
+# print(math.exp(2))
+# print(math.log10(54))
+# a=[1,5,4,9,8,7,6,3]
+# print(max(a))
+# b=[1,6,8,7,5,2,0]
+# print(min(b))
+# print(math.modf(250.1314))
+# print(math.pow(5,10))
+# print(round(5.51))
+# print(math.sqrt(16))
+# str="abcdesa"
+# print(str.capitalize())
+# print(str.capitalize())
+# print(str.capitalize())
+# print(str.count('a'))
+# print(str.endswith('sa'))
+
+

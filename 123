@@ -1,0 +1,18 @@
+import time
+dict={'a':1,'b':2,'c':3}
+print(dict['c'])
+dict['a']='王'
+dict['aa']=123
+print(dict['aa']);
+print(len(dict))
+print(str(dict))
+
+times=time.asctime(time.localtime(time.time()));
+print(times)
+time1=time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())
+print(time1)
+def time(time1):
+    print(time1)
+
+
+time("aaa");

@@ -1,0 +1,87 @@
+# ---------------------成绩
+# def yue(cj):
+#      if(cj>0)and(cj<=100):
+#         if(cj>=90)and(cj<100):
+#             print("A")
+#         elif(cj>=80)and(cj<=89):
+#             print("B")
+#         elif (cj >= 70)and( cj <= 79):
+#             print("C")
+#         elif (cj >= 60 )and( cj <= 69):
+#             print("D")
+#         elif (cj<60):
+#             print("E")
+#
+# yue(52)
+# -----------------------------------------------随机数 找出正数与负数
+# import random
+# list=[]
+# zs=[]
+# fs=[]
+# for i in range(50):
+#     a=random.randrange(-10,10)
+#     list.append(a)
+#     if(a>0):
+#         zs.append(a)
+#     elif(a<0):
+#         fs.append(a)
+# print("列表为",list)
+# print("正数列表为",zs)
+# print("负数列表为",fs)
+#------------------------------------
+# import random
+# list=[]
+# c=[]
+# for i in range(20):
+#     a=random.randrange(0,100)
+#     list.append(a)
+#     if(i%2==0):
+#         c.append(a);
+# print(list)
+# c.sort(reverse=True)
+# for i in range(len(c)):
+#     list[i*2]=c[i];
+# print(list)
+#------------------------------------
+# import random
+# str="abcdefghijklmnopqrstuvwsyz"
+# str1=""
+# zi={}
+# for i in range(1000):
+#     s=random.choice(str)
+#     str1=s
+#     if not (str1 in zi):
+#         zi[str1]=1
+#     elif str1 in zi:
+#         zi[str1]+=1
+# print(zi)
+
+# -----------------------------------
+import random
+# list=[]
+# b=[]
+
+# def fun1(a):
+#     sum = 0
+#     for i in a:
+#         if(i>50):
+#             sum=sum+1
+#             if(sum<=10):
+#                 b.append(i)
+#             else:
+#                 return b
+    #         b.append(i)
+    #
+    # return b[0:10]
+# def fun2(d):
+#     s = []
+#     for i in d:
+#         if(i%5==0):
+#             s.append(i)
+#     return s
+#
+#
+# for i in range(1000):
+#     list.append(random.randrange(1,100))
+# print(fun1(list))
+# print(fun2(list))

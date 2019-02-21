@@ -1,0 +1,124 @@
+# --------------------乘法表
+# i=1
+# while(i<=9):
+#     j=1;
+#     while(j<=i):
+#         print("%d*%d=%d"%(i,j,i*j),end=" ")
+#         j=j+1
+#     i=i+1
+#     print(" ")
+# -----------------分数序列
+# c=int(input("请输入一个数"))
+# i=1;
+# a=0;
+# b=1;
+# while(i<=c):
+#    i=i+1
+#    t=a;
+#    print(a)
+#    a=b;
+#    b=t+a;
+# -------------------水仙花数 10000以内
+# i=1
+# while(i<10000):
+#     if(i<10):
+#         print(i)
+#     elif(i>=10)and(i<=999):
+#         bai=i//100
+#         shi=i//10%10
+#         ge=i%10
+#         if(bai*bai*bai+shi*shi*shi+ge*ge*ge==i):
+#             print(i)
+#     elif(i>=1000):
+#         qian=i//1000
+#         bai=i//100%10
+#         shi=i//10%10
+#         ge=i%10
+#         if(qian*qian*qian*qian+bai*bai*bai*bai+shi*shi*shi*shi+ge*ge*ge*ge==i):
+#             print(i)
+#     i = i + 1
+# --------------------------------1，2，3，4 三位数不同
+# for i in range(1,5):
+#     for j in range(1,5):
+#         for c in range(1,5):
+#                 if(i!=j)and(i!=c)and(j!=c):
+#                     print(i,j,c)
+# --------------------利润
+# s=int(input("请输入当月利润（单位为万元）："))
+# jiang=[100,60,40,20,10,0]
+# li=[0.01,0.015,0.03,0.05,0.075,0.1]
+# sum=0
+# for i in range(0,6):
+#     if(s>jiang[i]):
+#         s=s-jiang[i];
+#         sum=sum+s*li[i]
+# print(sum)
+# -----------------三个数排序
+# a=int(input("请输入第一个数："))
+# b=int(input("请输入第二个数："))
+# c=int(input("请输入第三个数："))
+# m=[a,b,c];
+# m.sort()
+# print(m)
+# ----------------------
+
+# a=int(input("请输入列表的长度："))
+# b=[]
+# for i in range(a):
+#     c=int(input("请输入列表的数字："))
+#     b.append(c)
+# zi={}
+# for j in b:
+#     if not(j in zi):
+#         zi[j]=1
+#     elif j in zi:
+#         zi[j]+=1
+# max=0
+# z=[]
+# for k in zi:
+#     if zi[k]>max:
+#           max=zi[k]
+# for m in zi:
+#     if zi[m]==max:
+#         z.append(m)
+# print("字典是:",zi)
+# print(z)
+# for s in z:
+#    print("最大众数是:%d"%s)
+# a = [1,5,2,6,2,5,1,6,6,2,5,1,1,6,2,8,2,0,5,4,1,3]
+# b = {}
+# for i in a:
+# 	if i in b.keys():
+# 		b[i] += 1
+# 	else:
+# 		b[i] = 1
+#
+# c = sorted(b.items(), key=lambda x:x[1], reverse=True)
+# print(b.items())
+# print ('众数:', c[0][0], '众数个数:', c[0][1])
+# ------------------------------
+# str1="aaabbbccdefff"
+# # --------------------
+# numbers = [ 1, 5, -12, 37, 6,93, 100 ]
+# odd=[]
+# even=[]
+# for i in numbers:
+#     if(i%2==0)and(i!=0):
+#         odd.append(i)
+#     else:
+#         even.append(i)
+# print("偶数是:",odd)
+# print("奇数是",even)
+# -----------------------------
+# import random
+# list=[]
+# for i in range(20):
+#     a=random.randrange(1,100)
+#     list.append(a)
+# print(list)
+# ----------------------------
+list=[1,2,3,4,5,6,7]
+a=int(input("请输入向后移位的个数:"))
+for i in range(a%len(list)):
+   list.insert(0,list.pop())
+print(list)
