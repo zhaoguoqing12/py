@@ -97,7 +97,16 @@
 # print(b.items())
 # print ('众数:', c[0][0], '众数个数:', c[0][1])
 # ------------------------------
-# str1="aaabbbccdefff"
+# str="aaabbbccdefff"
+# zi={}
+# li=[]
+# str=list(str)
+# for i in str:
+#    if not(i in zi):
+#       zi[i]=1
+#    else:
+#       li.append(i)
+# print(set(li))
 # # --------------------
 # numbers = [ 1, 5, -12, 37, 6,93, 100 ]
 # odd=[]
@@ -117,8 +126,8 @@
 #     list.append(a)
 # print(list)
 # ----------------------------
-list=[1,2,3,4,5,6,7]
-a=int(input("请输入向后移位的个数:"))
-for i in range(a%len(list)):
-   list.insert(0,list.pop())
-print(list)
+# list=[1,2,3,4,5,6,7]
+# a=int(input("请输入向后移位的个数:"))
+# for i in range(a%len(list)):
+#    list.insert(0,list.pop())
+# print(list)
